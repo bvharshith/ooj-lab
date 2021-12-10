@@ -12,6 +12,7 @@ t=in.nextInt();
       b[i]=new Book();
       b[i].set();
   }
+  System.out.print("Details: \n");
   for(int i=0;i<t;i++)
   {
     System.out.println(b[i]);
