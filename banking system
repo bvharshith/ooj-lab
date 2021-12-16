@@ -13,7 +13,7 @@ class Account
         name=sc.nextLine();
         acc_no=sc.nextLong();
         sc.nextLine();
-        type=sc.method();
+        type=sc.nextLine();
     }
     void display()
     {
@@ -49,9 +49,9 @@ class Sav_acct extends Account
         t=s.nextInt();
         s.nextLine();
     }
-    void interest(acc)
+    void interestCal()
     {
-        interest=bal*(Math.pow((1+(r*0.01))t))-bal;
+        interest=bal*(Math.pow((1+(r*0.01)),t))-bal;
         bal=bal+interest;
     }
     void display()
@@ -99,7 +99,7 @@ class Bank
             ob1.input();
             ob1.deposit();
             ob1.withdraw();
-            ob1.interest();
+            ob1.interestCal();
             ob1.display();
         }
         else if(ch==2)
